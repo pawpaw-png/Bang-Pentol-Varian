@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bang Pentol Varian</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <h1>Bang Pentol Varian</h1>
+
+            <p id="tanggal">
+                Memuat tanggal...
+            </p>
+
+        </header>
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <p class="title">
+                    Total Penjualan
+                </p>
+
+                <h2 id="total">
+                    Rp 0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <p class="title">
+                    Total Transaksi
+                </p>
+
+                <h2 id="transaksi">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             QUICK BUTTON
+        ========================== -->
+
+        <section class="menu">
+
+            <button onclick="tambah(5000)">
+                +5.000
+            </button>
+
+            <button onclick="tambah(10000)">
+                +10.000
+            </button>
+
+            <button onclick="tambah(15000)">
+                +15.000
+            </button>
+
+            <button onclick="tambah(20000)">
+                +20.000
+            </button>
+
+            <button onclick="tambah(25000)">
+                +25.000
+            </button>
+
+            <button onclick="tambah(30000)">
+                +30.000
+            </button>
+
+            <button onclick="tambah(40000)">
+                +40.000
+            </button>
+
+            <button
+                class="manualButton"
+                onclick="toggleManual()">
+
+                Nominal Lain
+
+            </button>
+
+        </section>
+                <!-- =========================
+             INPUT MANUAL
+        ========================== -->
+
+        <section
+            id="manualBox"
+            class="manual hidden">
+
+            <input
+                type="number"
+                id="nominal"
+                placeholder="Contoh: 12 = Rp12.000">
+
+            <button onclick="tambahManual()">
+
+                Tambah
+
+            </button>
+
+        </section>
+
+        <!-- =========================
+             RIWAYAT
+        ========================== -->
+
+        <section class="history">
+
+            <div class="historyHeader">
+
+                <h3>
+                    Riwayat Penjualan
+                </h3>
+
+                <button onclick="kosongkanRiwayat()">
+
+                    Hapus Semua
+
+                </button>
+
+            </div>
+
+            <ul id="riwayat"></ul>
+
+        </section>
+
+        <!-- =========================
+             MENU BAWAH
+        ========================== -->
+
+        <section class="bottomMenu">
+
+            <button
+                class="undoButton"
+                onclick="undo()">
+
+                Undo
+
+            </button>
+
+            <button
+                class="resetButton"
+                onclick="resetData()">
+
+                Reset
+
+            </button>
+
+        </section>
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            Bang Pentol Varian © 2026
+
+        </footer>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
